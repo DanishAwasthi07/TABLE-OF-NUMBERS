@@ -1,1 +1,25 @@
+html>
+<head>
+<script>
+function table()
+{
+var n,i,res;
+n=parseInt(txt1.value);	
+document.write("<table border='5' align='center' height=600 width=300 >");
+for(i=1;i<=10;i++)
+{
+res=n*i;
+document.write("<tr><td>"+n+"</td><td>X</td><td>"+i+"</td><td>=</td><td>"+res+"</td></tr>");	
+}
+document.write("</table>");
+}
+</script>
+<title>multiplier</title>
+</head>
+<h1 style="color:aqua">TABLE OF NUMBERS</h1>
+<body style="background-color: rgb(43, 124, 247);">
+<p><input type="text" id="txt1" placeholder="Enter number"></p>
+<input type="button" value="click" onClick="table()">
+</body>
+</html>
 
